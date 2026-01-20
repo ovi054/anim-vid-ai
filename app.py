@@ -246,7 +246,16 @@ class ManimAnimationGenerator:
             quality_flag = quality_map.get(quality, "-ql")
             format_flag = "--format=gif" if format_type == "gif" else ""
             
-            cmd = [sys.executable, "-m", "manim", quality_flag, python_file, class_name]
+            # cmd = [sys.executable, "-m", "manim", quality_flag, python_file, class_name]
+            cmd = [
+                sys.executable, "-m", "manim", 
+                "-ql",            # Low Quality (480p)
+                "--fps", "15",    # Lower FPS (Standard is 30 or 60, 15 is much lighter)
+                "--disable_caching", # CRITICAL: Prevents cache lock freezes
+                "--flush_cache",     # CRITICAL: Clears memory
+                python_file, 
+                class_name
+            ]
             if format_flag:
                 cmd.append(format_flag)
             
