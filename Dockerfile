@@ -1,17 +1,34 @@
-FROM manimcommunity/manim:v0.19.0
+FROM python:3.10-slim
 
-USER root
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install dependencies (same as before)
+RUN apt-get update && apt-get install -y \
+    libcairo2-dev \
+    pkg-config \
+    python3-dev \
+    libpango1.0-dev \
+    ffmpeg \
+    texlive \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    dvipng \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-# Install Python requirements
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the app code
+# Upgrade pip just in case, then install requirements
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
 COPY . .
 
-# Permissions for writing video files
-RUN chmod -R 777 /app
+# Permissions
+RUN mkdir -p media && chmod -R 777 /app
 
-# Run the app
+EXPOSE 7860
+
 CMD ["python", "app.py"]
