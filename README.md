@@ -20,8 +20,17 @@ Complex logic is hard to explain with just text. Whether it's the swapping logic
 *   **Production Ready:** Dockerized architecture solving the complex dependency issues of FFmpeg, LaTeX, and Cairo.
 
 ## 🎥 Demo
-*(Embed your video link here - Required for Hackathon)*
-[![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+**Live URL:** https://anim-vid-ai.onrender.com
+
+**Demo Video:** https://www.youtube.com/watch?v=55oR1rhxszI
+
+
+## 🧠 How It Works
+1.  **Intent Parsing:** The AI analyzes the prompt to identify if the request is Mathematical (Graphs, Calculus) or Algorithmic (Arrays, Nodes, Pointers).
+2.  **Code Synthesis:** It generates a `MyScene` class in Python, utilizing Manim's `VGroup`, `Arrow`, and `.animate` methods to represent logic flows.
+3.  **Compilation:** The code is executed in an ephemeral sandbox to render the `.mp4` output.
+4.  **Error Correction:** If the code fails (e.g., overlapping nodes), the "Edit" feature allows the AI to self-correct the spatial arrangement.
+
 
 ## 🛠️ Tech Stack
 *   **Core Engine:** Python, Manim Community (v0.19.0)
@@ -57,13 +66,7 @@ This project requires system-level dependencies (FFmpeg, Pango, LaTeX) that are 
 3.  Select **Docker** as the runtime.
 4.  Add your `API_KEY` in the Environment Variables.
 
-## 🧠 How It Works
-1.  **Intent Parsing:** The AI analyzes the prompt to identify if the request is Mathematical (Graphs, Calculus) or Algorithmic (Arrays, Nodes, Pointers).
-2.  **Code Synthesis:** It generates a `MyScene` class in Python, utilizing Manim's `VGroup`, `Arrow`, and `.animate` methods to represent logic flows.
-3.  **Compilation:** The code is executed in an ephemeral sandbox to render the `.mp4` output.
-4.  **Error Correction:** If the code fails (e.g., overlapping nodes), the "Edit" feature allows the AI to self-correct the spatial arrangement.
-
-## 👥 Team
-*   **[Your Real Name]** - Lead Developer & AI Engineer
+## 👥 Team Members
+*   **Avi Pal**
 
 ---
