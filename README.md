@@ -22,7 +22,7 @@ Complex logic is hard to explain with just text. Whether it's the swapping logic
 ## 🎥 Demo
 **Live URL:** https://anim-vid-ai.onrender.com
 
-**Demo Video:** https://www.youtube.com/watch?v=55oR1rhxszI
+**Demo Video:** https://youtu.be/JwwYcg1Bcvg
 
 
 ## 🧠 How It Works
