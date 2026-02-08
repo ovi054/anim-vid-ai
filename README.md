@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Manim](https://img.shields.io/badge/Engine-Manim_Community-green)
-![AI](https://img.shields.io/badge/Model-Claude_Sonnet-purple)
+![AI](https://img.shields.io/badge/Model-Gemini_3_Flash-purple)
 ![Docker](https://img.shields.io/badge/Deployment-Docker-blue)
  
 > *Theme: Educational Tools & Platforms / Artificial Intelligence*
@@ -34,7 +34,7 @@ Complex logic is hard to explain with just text. Whether it's the swapping logic
 
 ## 🛠️ Tech Stack
 *   **Core Engine:** Python, Manim Community (v0.19.0)
-*   **Intelligence:** Fal AI (Claude 4.5 Sonnet) with custom prompting for algorithmic logic.
+*   **Intelligence:** Gemini 3 Flash with custom prompting for algorithmic logic.
 *   **Interface:** Gradio (Web UI).
 *   **Infrastructure:** Docker & Render (Cloud Deployment).
 
