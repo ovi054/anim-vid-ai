@@ -434,7 +434,7 @@ with gr.Blocks(theme=gr.themes.Soft(),
                title="AI Math Animation Generator") as app:
     gr.Markdown("# 🎬 AI-Powered Manim Animation Generator")
     gr.Markdown("Describe the animation you want, generate the code with AI, and render the video!")
-    # gr.Markdown("<small>Powered by Gemini 3 Flash</small>")
+    gr.Markdown("<small>Powered by Gemini 3</small>")
 
     with gr.Row():
         with gr.Column(scale=2):
