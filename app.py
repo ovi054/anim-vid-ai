@@ -46,7 +46,7 @@ def generate_code_from_prompt(prompt, progress=gr.Progress()):
     payload = {
         "prompt": prompt,
         "priority": "latency",
-        "model": "google/gemini-2.5-flash",
+        "model": "google/gemini-3-flash-preview",
         "system_prompt": f"""
 Write a Manim script that's in Python to visualize: {prompt}. FOCUS on producing working code. Always use Manim Community version 0.19 syntax. When creating an Axes object, do not use axis_color directly as a keyword argument. Instead, use axis_config= 'color': ... The class should be MyScene and end with self.wait(). Class name should be MyScene. End with self.wait() Only give me the python code so that I can directly put this into the manim project input. 
 Avoid using deprecated or unavailable ManimCE methods like get_tangent_line. Construct tangent lines manually using slope and Line(...).
@@ -107,7 +107,7 @@ Follow these rules:
     payload = {
         "prompt": f"Instruction: {instruction}\n\nOriginal Code:\n```python\n{existing_code}\n```",
         "priority": "latency",
-        "model": "google/gemini-2.5-flash",
+        "model": "google/gemini-3-flash-preview",
         "system_prompt": system_prompt
     }
 
